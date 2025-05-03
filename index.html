@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HireCraft Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; padding: 20px;">
+
+    <!-- Contact List Panel -->
+    <div class="chat-container" style="flex: 1 1 250px; max-width: 280px;">
+      <div class="chat-header">
+        <h1>Contact</h1>
+      </div>
+      <div class="chat-box">
+        <div class="message bot">Amber Griffin <span style="float:right;">🟢</span></div>
+        <div class="message bot">Andreea Wells <span style="float:right;">🟢</span></div>
+        <div class="message bot">Kathryn Hill <span style="float:right;">Last seen 3 min ago</span></div>
+        <div class="message bot">Kelly McCoy <span style="float:right;">Last seen 5 min ago</span></div>
+        <div class="message bot">Tyler Banks <span style="float:right;">Last seen 7 min ago</span></div>
+        <div class="message bot">Carmen Mendez <span style="float:right;">Last seen 10 min ago</span></div>
+      </div>
+    </div>
+
+    <!-- Main Chat Panel (HireCraft Chatbot) -->
+    <div class="chat-container" style="flex: 1 1 300px; max-width: 340px;">
+      <div class="chat-header">
+        <img src="hireC.jpg" alt="HireCraft Logo" class="logo" />
+        <h1>HireCraft</h1>
+      </div>
+      <div class="chat-box" id="chat-box"></div>
+      <form id="chat-form">
+        <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- Settings Panel -->
+    <div class="chat-container" style="flex: 1 1 250px; max-width: 280px;">
+      <div class="chat-header">
+        <h1>Setting</h1>
+      </div>
+      <div class="chat-box">
+        <div class="message bot">Account</div>
+        <div class="message bot">Chat</div>
+        <div class="message bot">Notifications</div>
+        <div class="message bot">Storage and Data</div>
+        <div class="message bot">Business</div>
+        <div class="message bot">Privacy</div>
+        <div class="message bot">Security</div>
+        <div class="message bot">Help</div>
+        <div class="message bot">About</div>
+      </div>
+      <form style="justify-content: center;">
+        <button style="width: 100%;">Log Out</button>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
